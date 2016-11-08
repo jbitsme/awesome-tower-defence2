@@ -6,30 +6,25 @@
  */
 public class Vector  
 {
-     // instance variables - replace the example below with your own
-    public double x;
-    public double y;
+    // instance variables - replace the example below with your own
+    private int x;
 
-    public Vektor(double pX, double pY)
+    /**
+     * Constructor for objects of class Vector
+     */
+    public Vector()
     {
-        x = pX;
-        y = pY;
     }
-    
-    public double getLength()
+
+    /**
+     * An example of a method - replace this comment with your own
+     * 
+     * @param  y   a sample parameter for a method
+     * @return     the sum of x and y 
+     */
+    public int sampleMethod(int y)
     {
-        return Math.hypot(x, y);
-    }
-    
-    public double skalarprodukt(Vektor v1, Vektor v2)
-    {
-        return ((v1.x*v2.x) + (v1.y*v2.y));
-    }
-    
-    public double getAngle(Vektor v1, Vektor v2)
-    {
-        double bogenmaß = Math.acos(skalarprodukt(v1, v2)/(v1.getLength()*v2.getLength()));
-        
-        return (360/(2*Math.PI))*bogenmaß;
+        // put your code here
+        return x + y;
     }
 }
