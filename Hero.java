@@ -37,22 +37,22 @@ public class Hero extends Actor
         if (Greenfoot.isKeyDown("left")) 
         {
             setRotation(180);
-            move(speed);
+            move(setSpeed());
         }
         if (Greenfoot.isKeyDown("right")) 
         {
             setRotation(0);
-            move(speed);
+            move(setSpeed());
         }
         if (Greenfoot.isKeyDown("up")) 
         {
             setRotation(270);
-            move(speed);
+            move(setSpeed());
         }
         if (Greenfoot.isKeyDown("down")) 
         {
             setRotation(90);
-            move(speed);
+            move(setSpeed());
         }
     }
 
