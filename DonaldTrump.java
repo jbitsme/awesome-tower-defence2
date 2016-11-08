@@ -25,7 +25,12 @@ public class DonaldTrump extends Actor
      */
     public void act() 
     {
-        findPray();
+        if(canMove()) {
+            findPray();
+        }
+        else {
+            turnLeft();
+        }
     }
     
     /**
@@ -33,21 +38,21 @@ public class DonaldTrump extends Actor
      */
     public void findPray()
     {
-        if(canMove()) {
+        if(!canMove()) {
             return;
         }
         switch(direction) {
             case SOUTH :
-                setLocation(getX(), getY() + 1);
+                setLocation(getX(), getY() + 2);
                 break;
             case EAST :
-                setLocation(getX() + 1, getY());
+                setLocation(getX() + 2, getY());
                 break;
             case NORTH :
-                setLocation(getX(), getY() -1);
+                setLocation(getX(), getY() -2);
                 break;
             case WEST :
-                setLocation(getX() - 1, getY());
+                setLocation(getX() - 2, getY());
                 break;
         }
     }
