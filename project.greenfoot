@@ -1,14 +1,51 @@
+<<<<<<< HEAD
 #Greenfoot project file
 class.DonaldTrump.superclass=greenfoot.Actor
 class.Hero.image=baby2.png
+=======
+#Greenfoot properties
+<<<<<<< HEAD
+#Tue Nov 08 10:38:00 CET 2016
+=======
+#Tue Nov 08 10:24:46 CET 2016
+>>>>>>> origin/master
+readme.name=@README
+>>>>>>> origin/master
 class.Hero.superclass=greenfoot.Actor
 class.MyWorld.superclass=greenfoot.World
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+target2.y=10
+package.numTargets=2
+target2.x=70
+=======
+target3.type=ClassTarget
+target2.y=70
+target2.x=70
+package.numTargets=4
+>>>>>>> origin/master
+target1.height=50
+target4.showInterface=false
+>>>>>>> origin/master
 class.PowerUp.image=stawberry.png
 class.PowerUp.superclass=greenfoot.Actor
 dependency1.from=Hero
 dependency1.to=PowerUp
 dependency1.type=UsesDependency
 editor.fx.0.height=700
+<<<<<<< HEAD
+=======
+target1.showInterface=false
+target3.typeParameters=
+target1.name=DonaldTrump
+<<<<<<< HEAD
+class.DonaldTrump.image=alligator.png
+editor.swing.0.width=697
+=======
+editor.swing.0.width=921
+>>>>>>> origin/master
+>>>>>>> origin/master
 editor.fx.0.width=700
 editor.fx.0.x=0
 editor.fx.0.y=0
