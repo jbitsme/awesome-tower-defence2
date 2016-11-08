@@ -5,6 +5,7 @@ comment1.params=
 comment1.target=DonaldTrump()
 comment2.params=
 comment2.target=void\ act()
+<<<<<<< HEAD
 comment2.text=\r\n\ do\ what\ Donald\ Trump\ does\ best\!\ finding\ pray\r\n
 comment3.params=
 comment3.target=void\ findPray()
@@ -18,3 +19,9 @@ comment5.text=\r\n\ makes\ DonaldTrump\ turn\ left\ when\ he\ hits\ the\ end\ of
 comment6.params=direction
 comment6.target=void\ setDirection(int)
 numComments=7
+=======
+comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ DonaldTrump\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment3.params=direction
+comment3.target=void\ setDirection(int)
+numComments=4
+>>>>>>> origin/master

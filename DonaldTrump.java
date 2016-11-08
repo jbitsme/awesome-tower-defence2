@@ -116,6 +116,7 @@ public class DonaldTrump extends Actor
                 setRotation(0);
                 break;
             case NORTH :
+<<<<<<< HEAD
                 setRotation(270);
                 break;
             case WEST :
@@ -124,5 +125,10 @@ public class DonaldTrump extends Actor
             default :
                 break;
         }
+=======
+            setRotation(270);
+        }
+  
+>>>>>>> origin/master
     }
 }
