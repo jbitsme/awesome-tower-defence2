@@ -1,5 +1,22 @@
+<<<<<<< HEAD
 #Greenfoot project file
 =\=\=\=\=\=\=
+=======
+<<<<<<< HEAD
+#Greenfoot project file
+=\=\=\=\=\=\=
+<<<<<<<=HEAD
+>>>>>>>=origin/master
+class.DonaldTrump.image=alligator.png
+class.DonaldTrump.superclass=greenfoot.Actor
+class.Hero.image=baby2.png
+class.Hero.superclass=greenfoot.Actor
+class.MyWorld.superclass=greenfoot.World
+=======
+#Greenfoot properties
+#Tue Nov 08 13:02:30 CET 2016
+target4.type=ClassTarget
+>>>>>>> origin/master
 <<<<<<<=HEAD
 >>>>>>>=origin/master
 class.DonaldTrump.image=trumppf.png
@@ -16,12 +33,69 @@ class.UI.superclass=greenfoot.Actor
 class.WayPoint.superclass=greenfoot.Actor
 dependency1.from=Hero
 dependency1.to=PowerUp
+<<<<<<< HEAD
 dependency1.type=UsesDependency
 dependency2.from=TowerRadius
 dependency2.to=Tower
 dependency2.type=UsesDependency
 editor.fx.0.height=700
 editor.fx.0.width=700
+=======
+target7.width=80
+>>>>>>> origin/master
+class.PowerUp.image=stawberry.png
+class.PowerUp.superclass=greenfoot.Actor
+dependency1.from=Hero
+dependency1.to=PowerUp
+dependency1.type=UsesDependency
+dependency2.from=TowerRadius
+dependency2.to=Tower
+<<<<<<< HEAD
+dependency2.type=UsesDependency
+editor.fx.0.height=700
+editor.fx.0.width=700
+editor.fx.0.x=0
+editor.fx.0.y=0
+editor.swing.0.height=838
+editor.swing.0.width=850
+editor.swing.0.x=523
+editor.swing.0.y=39
+mainWindow.height=939
+mainWindow.width=1170
+mainWindow.x=621
+mainWindow.y=50
+package.numDependencies=1
+package.numTargets=4
+project.charset=UTF-8
+readme.height=58
+readme.name=@README
+readme.width=47
+readme.x=10
+readme.y=10
+target1.height=50
+target1.name=DonaldTrump
+target1.showInterface=false
+target1.type=ClassTarget
+target1.typeParameters=
+target1.width=100
+target1.x=160
+target1.y=10
+target2.height=50
+target2.name=Hero
+target2.showInterface=false
+target2.type=ClassTarget
+target2.typeParameters=
+target2.width=80
+target2.x=70
+target2.y=70
+target3.height=50
+target3.name=PowerUp
+target3.showInterface=false
+=======
+target1.width=100
+editor.fx.0.y=0
+class.DonaldTrump.image=trumppf.png
+>>>>>>> origin/master
 editor.fx.0.x=0
 editor.fx.0.y=0
 editor.swing.0.height=735
@@ -55,10 +129,28 @@ target2.type=ClassTarget
 target2.typeParameters=
 target2.width=80
 target2.x=70
+<<<<<<< HEAD
 target2.y=70
 target3.height=50
 target3.name=PowerUp
 target3.showInterface=false
+=======
+mainWindow.y=-8
+mainWindow.x=-8
+dependency1.from=Hero
+target6.typeParameters=
+target8.name=MyWorld
+target5.width=100
+target1.y=10
+target1.x=160
+editor.fx.0.height=700
+dependency1.type=UsesDependency
+readme.height=58
+readme.name=@README
+target2.name=Hero
+package.numDependencies=1
+>>>>>>> origin/master
+>>>>>>> origin/master
 target3.type=ClassTarget
 target3.typeParameters=
 target3.width=80
@@ -77,11 +169,16 @@ target5.name=TowerRadius
 target5.showInterface=false
 target5.type=ClassTarget
 target5.typeParameters=
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/master
 target5.width=100
 target5.x=100
 target5.y=130
 target6.height=50
 target6.name=WayPoint
+<<<<<<< HEAD
 target6.showInterface=false
 target6.type=ClassTarget
 target6.typeParameters=
@@ -106,3 +203,44 @@ target8.x=70
 target8.y=10
 version=2.8.0
 world.lastInstantiated=MyWorld
+=======
+target6.showInterface=false
+target6.type=ClassTarget
+target6.typeParameters=
+target6.width=80
+target6.x=10
+target6.y=190
+target7.height=50
+target7.name=Tower
+target7.showInterface=false
+target7.type=ClassTarget
+target7.typeParameters=
+target7.width=80
+target7.x=100
+target7.y=190
+target8.height=50
+target8.name=MyWorld
+target8.showInterface=false
+target8.type=ClassTarget
+target8.typeParameters=
+target8.width=80
+target8.x=70
+target8.y=10
+version=2.8.0
+world.lastInstantiated=MyWorld
+=======
+world.lastInstantiated=MyWorld
+target2.showInterface=false
+mainWindow.height=744
+editor.swing.0.height=735
+target3.name=PowerUp
+target7.height=50
+target6.showInterface=false
+class.MyWorld.image=background.jpg
+target3.width=80
+project.charset=UTF-8
+class.WayPoint.superclass=greenfoot.Actor
+target4.showInterface=false
+=\=\=\=\=\=\=
+>>>>>>> origin/master
+>>>>>>> origin/master
