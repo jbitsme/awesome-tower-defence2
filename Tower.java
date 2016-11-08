@@ -24,7 +24,7 @@ public class Tower extends UI
      * @param damage        Damage the tower does on enemys.
      * @param bulletSpeed   Bulletspeed.
      */
-    public Tower(double radius, double reloadSpeed, double damage, double bulletSpeed, int towerCosts, boolean attackFirstCreep)
+    public Tower(double radius, double reloadSpeed, double damage, double bulletSpeed, boolean attackFirstCreep)
     {
         RADIUS        = radius;
         RELOAD_SPEED  = reloadSpeed;
