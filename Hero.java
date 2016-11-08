@@ -8,6 +8,15 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Hero extends Actor
 {
+    private int powerUp;
+    
+    /*
+     * Create a Hero
+     */
+    public Hero()
+    {
+        powerUp = 0;
+    }
     /**
      * Act - do whatever the Hero wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -15,9 +24,10 @@ public class Hero extends Actor
     public void act() 
     {
         checkKeypress();
+        lookForPowerUp();
     }    
-    
-       /**
+
+    /**
      * Check whether a control key on the keyboard has been pressed.
      * If it has, react accordingly.
      */
@@ -40,8 +50,22 @@ public class Hero extends Actor
         }
         if (Greenfoot.isKeyDown("down")) 
         {
-           setRotation(90);
-           move(5);
+            setRotation(90);
+            move(5);
         }
     }
+
+    /**
+     * Check if we have found a PowerUp.
+     * If we have, take it, if not do nothing.
+     */
+    public void lookForPowerUp()
+    {
+        if (isTouching(PowerUp.class))
+        {
+            removeTouching(PowerUp.class);
+            
+            powerUp = powerUp + 1;
+        }
+    }    
 }
