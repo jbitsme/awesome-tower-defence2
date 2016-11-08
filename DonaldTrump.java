@@ -43,3 +43,6 @@ public class DonaldTrump extends Actor
                 break;
             case NORTH :
             setRotation(270);
+        }
+    }
+}

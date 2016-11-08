@@ -1,13 +1,16 @@
 #Greenfoot properties
-#Tue Nov 08 09:22:14 CET 2016
+#Tue Nov 08 09:39:41 CET 2016
 readme.name=@README
+class.TowerRadius.superclass=greenfoot.Actor
 target2.name=MyWorld
+class.UI.superclass=greenfoot.Actor
 target2.showInterface=false
 target1.type=ClassTarget
 class.MyWorld.superclass=greenfoot.World
 target2.y=10
-target2.x=70
 package.numTargets=2
+target2.x=70
+class.WayPoint.superclass=greenfoot.Actor
 target1.height=50
 editor.swing.0.y=0
 editor.swing.0.x=-7
@@ -19,6 +22,7 @@ target1.showInterface=false
 target1.name=DonaldTrump
 editor.swing.0.width=697
 editor.fx.0.width=700
+class.Tower.superclass=UI
 target2.typeParameters=
 readme.y=10
 readme.x=10
