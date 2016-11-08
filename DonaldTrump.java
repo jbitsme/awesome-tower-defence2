@@ -10,7 +10,7 @@ public class DonaldTrump extends Actor
 {
     private static final int EAST = 0;
     private static final int WEST = 1;
-    private static final int North = 2;
+    private static final int NORTH = 2;
     private static final int SOUTH = 3;
     
     private int direction;
@@ -116,7 +116,7 @@ public class DonaldTrump extends Actor
                 setRotation(0);
                 break;
             case NORTH :
-<<<<<<< HEAD
+
                 setRotation(270);
                 break;
             case WEST :
@@ -125,13 +125,9 @@ public class DonaldTrump extends Actor
             default :
                 break;
         }
-=======
+
             setRotation(270);
         }
-<<<<<<< HEAD
-=======
-  
->>>>>>> origin/master
->>>>>>> origin/master
+
     }
-}
+

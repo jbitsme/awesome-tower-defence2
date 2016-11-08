@@ -9,6 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Hero extends Actor
 {
     private int powerUp;
+    private int speed;
     
     /*
      * Create a Hero
@@ -36,22 +37,22 @@ public class Hero extends Actor
         if (Greenfoot.isKeyDown("left")) 
         {
             setRotation(180);
-            move(5);
+            move(speed);
         }
         if (Greenfoot.isKeyDown("right")) 
         {
             setRotation(0);
-            move(5);
+            move(speed);
         }
         if (Greenfoot.isKeyDown("up")) 
         {
             setRotation(270);
-            move(5);
+            move(speed);
         }
         if (Greenfoot.isKeyDown("down")) 
         {
             setRotation(90);
-            move(5);
+            move(speed);
         }
     }
 
@@ -67,5 +68,14 @@ public class Hero extends Actor
             
             powerUp = powerUp + 1;
         }
-    }    
+    } 
+    
+    /**
+     * Sets the speed of the Hero
+     */
+    public int setSpeed()
+    {
+        speed = 5;
+    }
+   
 }
