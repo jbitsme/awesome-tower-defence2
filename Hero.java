@@ -76,6 +76,7 @@ public class Hero extends Actor
     public int setSpeed()
     {
         speed = 5;
+        return speed;
     }
    
 }
