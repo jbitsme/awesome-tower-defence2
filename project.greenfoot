@@ -1,5 +1,9 @@
 #Greenfoot properties
+<<<<<<< HEAD
 #Wed Nov 09 09:15:28 CET 2016
+=======
+#Wed Nov 09 09:38:39 CET 2016
+>>>>>>> origin/master
 target4.type=ClassTarget
 <<<<<<<=HEAD
 target8.showInterface=false
@@ -52,12 +56,20 @@ target1.type=ClassTarget
 target7.y=190
 class.Hero.image=baby2.png
 target7.x=100
+<<<<<<< HEAD
 editor.swing.0.width=1411
+=======
+editor.swing.0.width=0
+>>>>>>> origin/master
 target7.name=Tower
 editor.swing.0.y=0
 target6.y=190
 target1.typeParameters=
+<<<<<<< HEAD
 editor.swing.0.x=131
+=======
+editor.swing.0.x=0
+>>>>>>> origin/master
 target6.x=10
 class.PowerUp.superclass=greenfoot.Actor
 target2.height=50
@@ -75,8 +87,13 @@ target2.type=ClassTarget
 target2.y=70
 target2.x=70
 class.MyWorld.superclass=greenfoot.World
+<<<<<<< HEAD
 mainWindow.y=107
 mainWindow.x=264
+=======
+mainWindow.y=-8
+mainWindow.x=-8
+>>>>>>> origin/master
 target8.name=MyWorld
 target6.typeParameters=
 dependency1.from=Hero
@@ -99,7 +116,11 @@ target5.typeParameters=
 world.lastInstantiated=MyWorld
 mainWindow.height=744
 target2.showInterface=false
+<<<<<<< HEAD
 editor.swing.0.height=1038
+=======
+editor.swing.0.height=0
+>>>>>>> origin/master
 target3.name=PowerUp
 target7.height=50
 target6.showInterface=false

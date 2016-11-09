@@ -11,7 +11,7 @@ public class Hero extends Actor
     private int powerUp; 
     private int speed; 
     private boolean speedUp; //If eaten a Extra Speed PowerUp then speed up
-    private int timer = 100;
+    private int timer;
 
     /**
      * Create a Hero
@@ -30,6 +30,7 @@ public class Hero extends Actor
     {
         checkKeypress();
         lookForPowerUp();
+        
         countDown();
         setSpeed();
     }    
@@ -99,15 +100,26 @@ public class Hero extends Actor
 
     public void countDown()
     {
+        if (speedUp == false)
+        {
+            setTimer();
+        }
         if (speedUp == true)
         {
             timer--;
             if (timer == 0)
             {
                 speedUp = false;
-                setSpeed();
+                
+                setTimer();
             }
         }
+    }
+    
+    public int setTimer()
+    {
+        timer = 100;
+        return timer;
     }
 
 }
