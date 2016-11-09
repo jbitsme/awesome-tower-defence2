@@ -1,5 +1,6 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
+
 /**
  * Write a description of class DonaldTrump here.
  * 
@@ -8,53 +9,71 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class DonaldTrump extends Actor
 {
-    private static final int EAST = 0;
-    private static final int WEST = 1;
-    private static final int NORTH = 2;
-    private static final int SOUTH = 3;
-    
-    private int direction;
+  
+    private static final double WALKING_SPEED = 2.0;
     
     public DonaldTrump()
     {
-        setDirection(EAST);
     }
     
-    /**
-     * do what Donald Trump does best! finding pray
-     */
-    public void act() 
+    public void act()
     {
-        if(canMove()) {
-            findPray();
-        }
-        else {
-            turnLeft();
+        turnAtEdge();
+        randomTurn();
+        move();
+        atWorldEdge();
+        
+    }
+    
+    public void turnAtEdge()
+    {
+        if ( atWorldEdge() )
+        {
+            turn(17);
         }
     }
     
-    /**
+    public void randomTurn()
+    {
+        if (Greenfoot.getRandomNumber(100) > 90) {
+            turn(Greenfoot.getRandomNumber(90)-45);
+        }
+    }
+    
+    public boolean canSee(Class clss)
+    {
+        return getOneObjectAtOffset(0, 0, clss) != null;
+    }
+    
+    public void eat(Class clss)
+    {
+       Actor actor = getOneObjectAtOffset(0, 0, clss);
+       if(actor != null)
+       {
+           getWorld().removeObject(actor);
+       }
+    }
+    
+    public boolean atWorldEdge()
+    {
+        if(getX()< 1 ||getX()>getWorld().getWidth()-10)
+        return true;
+        if(getY()< 1 ||getY()>getWorld().getHeight()-10)
+        return true;
+        else
+        return false;
+    }
+    
+        /**
      * make Donald Trump move around.
      */
-    public void findPray()
+    public void move()
     {
-        if(!canMove()) {
-            return;
-        }
-        switch(direction) {
-            case SOUTH :
-                setLocation(getX(), getY() + 2);
-                break;
-            case EAST :
-                setLocation(getX() + 2, getY());
-                break;
-            case NORTH :
-                setLocation(getX(), getY() -2);
-                break;
-            case WEST :
-                setLocation(getX() - 2, getY());
-                break;
-        }
+        double angle = Math.toRadians( getRotation() );
+        int x = (int) Math.round(getX() + Math.cos(angle) * WALKING_SPEED);
+        int y = (int) Math.round(getY() + Math.sin(angle) * WALKING_SPEED);
+        
+        setLocation(x, y);
     }
     
     /**
@@ -65,20 +84,6 @@ public class DonaldTrump extends Actor
         World myWorld = getWorld();
         int x = getX();
         int y = getY();
-        switch(direction) {
-            case SOUTH :
-                y++;
-                break;
-            case EAST :
-                x++;
-                break;
-            case NORTH :
-                y--;
-                break;
-            case WEST :
-                x--;
-                break;
-        }
         // test for outside border
         if(x >= myWorld.getWidth() || y >= myWorld.getHeight()) {
             return false;
@@ -88,51 +93,7 @@ public class DonaldTrump extends Actor
         }
         return true;
     }
-    /**
-     * makes DonaldTrump turn left when he hits the end of the the road.
-     */
-    public void turnLeft()
-    {
-        switch(direction) {
-            case SOUTH :
-                setDirection(EAST);
-                break;
-            case EAST :
-                setDirection(NORTH);
-                break;
-            case NORTH :
-                setDirection(WEST);
-                break;
-            case WEST :
-                setDirection(SOUTH);
-                break;
-        }
-    }
-    public void setDirection(int direction)
-    {
-        if((direction >= 0) && (direction <= 3)) {
-            this.direction = direction;
-        }
-        switch(direction) {
-            case SOUTH :
-                setRotation(90);
-                break;
-            case EAST :
-                setRotation(0);
-                break;
-            case NORTH :
-
-                setRotation(270);
-                break;
-            case WEST :
-                setRotation(180);
-                break;
-            default :
-                break;
-        }
-
-            setRotation(270);
-        }
-
-    }
+    
+    
+}
 
