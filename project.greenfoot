@@ -1,5 +1,13 @@
 #Greenfoot properties
+<<<<<<< HEAD
 #Wed Nov 09 11:29:30 CET 2016
+=======
+<<<<<<< HEAD
+#Wed Nov 09 09:15:28 CET 2016
+=======
+#Wed Nov 09 09:38:39 CET 2016
+>>>>>>> origin/master
+>>>>>>> origin/master
 target4.type=ClassTarget
 <<<<<<<=HEAD
 target8.showInterface=false
@@ -53,12 +61,28 @@ target1.type=ClassTarget
 target7.y=190
 class.Hero.image=baby2.png
 target7.x=100
+<<<<<<< HEAD
 editor.swing.0.width=697
+=======
+<<<<<<< HEAD
+editor.swing.0.width=1411
+=======
+editor.swing.0.width=0
+>>>>>>> origin/master
+>>>>>>> origin/master
 target7.name=Tower
 editor.swing.0.y=0
 target6.y=190
 target1.typeParameters=
+<<<<<<< HEAD
 editor.swing.0.x=676
+=======
+<<<<<<< HEAD
+editor.swing.0.x=131
+=======
+editor.swing.0.x=0
+>>>>>>> origin/master
+>>>>>>> origin/master
 target6.x=10
 class.PowerUp.superclass=greenfoot.Actor
 target2.height=50
@@ -75,11 +99,21 @@ target3.x=160
 target2.type=ClassTarget
 target2.y=70
 class.MyWorld.superclass=greenfoot.World
+<<<<<<< HEAD
 target2.x=70
 mainWindow.y=-8
 mainWindow.x=-8
 dependency1.from=Hero
 target6.typeParameters=
+=======
+<<<<<<< HEAD
+mainWindow.y=107
+mainWindow.x=264
+=======
+mainWindow.y=-8
+mainWindow.x=-8
+>>>>>>> origin/master
+>>>>>>> origin/master
 target8.name=MyWorld
 target5.width=100
 target1.y=10
@@ -90,7 +124,12 @@ readme.height=58
 readme.name=@README
 target2.name=Hero
 class.ExtraSpeed.image=plum.png
+<<<<<<< HEAD
 package.numDependencies=1
+=======
+readme.name=@README
+package.numDependencies=2
+>>>>>>> origin/master
 target3.type=ClassTarget
 target4.width=90
 dependency2.from=Hero
@@ -100,7 +139,11 @@ target5.typeParameters=
 world.lastInstantiated=MyWorld
 mainWindow.height=744
 target2.showInterface=false
-editor.swing.0.height=945
+<<<<<<< HEAD
+editor.swing.0.height=1038
+=======
+editor.swing.0.height=0
+>>>>>>> origin/master
 target3.name=PowerUp
 target7.height=50
 target6.showInterface=false
@@ -110,3 +153,7 @@ target3.width=80
 class.WayPoint.superclass=greenfoot.Actor
 =\=\=\=\=\=\=
 target4.showInterface=false
+<<<<<<< HEAD
+=======
+class.WayPoint.superclass=greenfoot.Actor
+>>>>>>> origin/master
