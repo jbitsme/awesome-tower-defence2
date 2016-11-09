@@ -30,7 +30,6 @@ public class Hero extends Actor
     {
         checkKeypress();
         lookForPowerUp();
-        
         countDown();
         setSpeed();
     }    
@@ -56,7 +55,7 @@ public class Hero extends Actor
             setRotation(270);
             move(setSpeed());
         }
-        if (Greenfoot.isKeyDown("down")) 
+        if (Greenfoot.isKeyDown("down" )) 
         {
             setRotation(90);
             move(setSpeed());
@@ -71,7 +70,7 @@ public class Hero extends Actor
 
         if (speedUp == true)
         {
-            speed = 40;
+            speed = 5;
         }
         else{
             speed = 1;
@@ -92,8 +91,12 @@ public class Hero extends Actor
             {
                 speedUp = true;
                 countDown();
+                MyWorld w = (MyWorld)getWorld();
+                w.putExtraSpeed();
+                
             } 
             removeTouching(PowerUp.class);
+            
             powerUp++;            
         }
     }
@@ -118,7 +121,7 @@ public class Hero extends Actor
     
     public int setTimer()
     {
-        timer = 100;
+        timer = 200;
         return timer;
     }
 
