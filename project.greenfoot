@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #Greenfoot project file
 =\=\=\=\=\=\=
 <<<<<<<=HEAD
@@ -5,14 +6,37 @@
 class.DonaldTrump.image=trumppf.png
 class.DonaldTrump.superclass=greenfoot.Actor
 class.ExtraSpeed.image=plum.png
+=======
+#Greenfoot properties
+target4.type=ClassTarget
+target8.showInterface=false
+target3.height=50
+target5.height=50
+>>>>>>> origin/master
 class.ExtraSpeed.superclass=PowerUp
 class.Hero.image=baby2.png
 class.Hero.superclass=greenfoot.Actor
+<<<<<<< HEAD
 class.MyWorld.image=background.jpg
 class.MyWorld.superclass=greenfoot.World
 class.PowerUp.image=stawberry.png
 class.PowerUp.superclass=greenfoot.Actor
 class.Tower.superclass=UI
+=======
+target4.name=Hero
+target8.width=80
+target4.typeParameters=
+readme.width=47
+editor.fx.0.width=700
+target1.height=50
+target5.type=ClassTarget
+class.Bullet.superclass=greenfoot.Actor
+target3.typeParameters=
+target2.width=90
+target5.name=PowerUp
+target2.width=80
+target5.name=MyWorld
+>>>>>>> origin/master
 class.TowerRadius.superclass=greenfoot.Actor
 class.UI.superclass=greenfoot.Actor
 class.Wall.superclass=greenfoot.Actor
@@ -22,6 +46,7 @@ dependency1.to=PowerUp
 dependency1.type=UsesDependency
 dependency2.from=Hero
 dependency2.to=ExtraSpeed
+<<<<<<< HEAD
 dependency2.type=UsesDependency
 dependency3.from=MyWorld
 dependency3.to=Hero
@@ -57,12 +82,53 @@ readme.x=10
 readme.y=10
 target1.height=50
 target1.name=Wall
+=======
+target1.width=80
+editor.fx.0.y=0
+class.DonaldTrump.image=trumppf.png
+editor.fx.0.x=0
+target2.typeParameters=
+target8.height=50
+class.Lobster.superclass=greenfoot.Actor
+target3.showInterface=false
+target6.name=Tower
+target7.showInterface=false
+>>>>>>> origin/master
 target1.showInterface=false
 target1.type=ClassTarget
+<<<<<<< HEAD
 target1.typeParameters=
 target1.width=80
 target1.x=110
 target1.y=130
+=======
+target7.y=130
+class.Hero.image=baby2.png
+target7.x=10
+editor.swing.0.width=1012
+target7.name=ExtraSpeed
+editor.swing.0.y=12
+target6.y=130
+target1.typeParameters=
+editor.swing.0.x=776
+target6.x=110
+class.PowerUp.superclass=greenfoot.Actor
+target2.height=50
+target4.height=50
+target5.y=70
+class.Bullet.image=blue-draught.png
+target5.x=160
+editor.swing.0.width=697
+editor.swing.0.width=1411
+editor.swing.0.width=0
+target7.name=Tower
+editor.swing.0.y=0
+target6.y=190
+target1.typeParameters=
+editor.swing.0.x=676
+target6.x=10
+class.PowerUp.superclass=greenfoot.Actor
+>>>>>>> origin/master
 target2.height=50
 target2.name=DonaldTrump
 target2.showInterface=false
@@ -95,6 +161,7 @@ target5.typeParameters=
 target5.width=90
 target5.x=10
 target5.y=130
+<<<<<<< HEAD
 target6.height=50
 target6.name=MyWorld
 target6.showInterface=false
@@ -121,3 +188,71 @@ target8.x=70
 target8.y=10
 version=2.8.0
 world.lastInstantiated=MyWorld
+=======
+target5.x=100
+class.DonaldTrump.superclass=greenfoot.Actor
+target1.name=Bullet
+target8.type=ClassTarget
+target4.y=70
+target4.x=70
+target3.y=10
+target3.x=160
+target2.type=ClassTarget
+target2.y=190
+target2.x=10
+class.MyWorld.superclass=greenfoot.World
+mainWindow.y=155
+mainWindow.x=110
+target8.name=MyWorld
+target6.typeParameters=
+dependency1.from=Hero
+target5.width=80
+target1.y=130
+target2.x=70
+mainWindow.y=-8
+mainWindow.x=-8
+dependency1.from=Hero
+target6.typeParameters=
+mainWindow.y=-8
+mainWindow.x=-8
+target8.name=MyWorld
+target5.width=100
+target1.y=10
+editor.fx.0.height=700
+target1.x=200
+dependency1.type=UsesDependency
+readme.height=58
+class.Tower.image=castle.png
+target2.name=BulletTower
+readme.name=@README
+target2.name=Hero
+class.ExtraSpeed.image=plum.png
+package.numDependencies=1
+readme.name=@README
+package.numDependencies=2
+target3.type=ClassTarget
+target4.width=80
+dependency2.from=Hero
+class.Tower.superclass=greenfoot.Actor
+dependency2.type=UsesDependency
+target5.typeParameters=
+world.lastInstantiated=MyWorld
+mainWindow.height=860
+target2.showInterface=false
+editor.swing.0.height=1017
+target3.name=DonaldTrump
+class.Tower.superclass=UI
+dependency2.type=UsesDependency
+target5.typeParameters=
+world.lastInstantiated=MyWorld
+mainWindow.height=744
+target2.showInterface=false
+editor.swing.0.height=1038
+target3.name=PowerUp
+target7.height=50
+target6.showInterface=false
+class.MyWorld.image=background.jpg
+project.charset=UTF-8
+target4.showInterface=false
+class.WayPoint.superclass=greenfoot.Actor
+>>>>>>> origin/master
