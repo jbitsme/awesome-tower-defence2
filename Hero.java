@@ -11,8 +11,8 @@ public class Hero extends Actor
     private int powerUp; 
     private int speed; 
     private boolean speedUp; //If eaten a Extra Speed PowerUp then speed up
-    
-        
+    private int timer;
+
     /**
      * Create a Hero
      */
@@ -30,6 +30,7 @@ public class Hero extends Actor
     {
         checkKeypress();
         lookForPowerUp();
+        countDown();
         setSpeed();
     }    
 
@@ -54,7 +55,7 @@ public class Hero extends Actor
             setRotation(270);
             move(setSpeed());
         }
-        if (Greenfoot.isKeyDown("down")) 
+        if (Greenfoot.isKeyDown("down" )) 
         {
             setRotation(90);
             move(setSpeed());
@@ -66,17 +67,18 @@ public class Hero extends Actor
      */
     public int setSpeed()
     {
+
         if (speedUp == true)
         {
-            speed = 40;
+            speed = 5;
         }
         else{
             speed = 1;
         }
         return speed;
-        
+
     }
-    
+
     /**
      * Check if we have found a PowerUp.
      * If we have, take it, if not do nothing.
@@ -88,12 +90,39 @@ public class Hero extends Actor
             if(isTouching(ExtraSpeed.class))
             {
                 speedUp = true;
+                countDown();
+                MyWorld w = (MyWorld)getWorld();
+                w.putExtraSpeed();
+                
             } 
             removeTouching(PowerUp.class);
-            powerUp++;
             
+            powerUp++;            
+        }
+    }
+
+    public void countDown()
+    {
+        if (speedUp == false)
+        {
+            setTimer();
+        }
+        if (speedUp == true)
+        {
+            timer--;
+            if (timer == 0)
+            {
+                speedUp = false;
+                
+                setTimer();
+            }
         }
     }
     
-   
+    public int setTimer()
+    {
+        timer = 200;
+        return timer;
+    }
+
 }
