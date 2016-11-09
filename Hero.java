@@ -8,16 +8,20 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Hero extends Actor
 {
-    private int powerUp;
-    private int speed;
+    private int powerUp; 
+    private int speed; 
+    private boolean speedUp; //If eaten a Extra Speed PowerUp then speed up
     
-    /*
+        
+    /**
      * Create a Hero
      */
     public Hero()
     {
-        powerUp = 0;
+        powerUp = 0;  
+        speedUp = false;
     }
+
     /**
      * Act - do whatever the Hero wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -26,6 +30,7 @@ public class Hero extends Actor
     {
         checkKeypress();
         lookForPowerUp();
+        setSpeed();
     }    
 
     /**
@@ -57,6 +62,22 @@ public class Hero extends Actor
     }
 
     /**
+     * Sets the speed of the Hero
+     */
+    public int setSpeed()
+    {
+        if (speedUp == true)
+        {
+            speed = 40;
+        }
+        else{
+            speed = 1;
+        }
+        return speed;
+        
+    }
+    
+    /**
      * Check if we have found a PowerUp.
      * If we have, take it, if not do nothing.
      */
@@ -64,19 +85,15 @@ public class Hero extends Actor
     {
         if (isTouching(PowerUp.class))
         {
+            if(isTouching(ExtraSpeed.class))
+            {
+                speedUp = true;
+            } 
             removeTouching(PowerUp.class);
+            powerUp++;
             
-            powerUp = powerUp + 1;
         }
-    } 
-    
-    /**
-     * Sets the speed of the Hero
-     */
-    public int setSpeed()
-    {
-        speed = 5;
-        return speed;
     }
+    
    
 }
