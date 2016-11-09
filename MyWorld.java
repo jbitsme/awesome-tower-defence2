@@ -17,6 +17,7 @@ public class MyWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
+<<<<<<< HEAD
         putHero();
         checkForExtraSpeed();
     }
@@ -40,6 +41,17 @@ public class MyWorld extends World
        extraSpeed = new ExtraSpeed();
        addObject(extraSpeed, Greenfoot.getRandomNumber(600), Greenfoot.getRandomNumber(400));
 
+=======
+        populateWorld();
+    }
+    
+    public void populateWorld()
+    {
+        addObject(new DonaldTrump(), 500, 50);
+        addObject(new DonaldTrump(), 100, 350);
+        addObject(new DonaldTrump(), 100, 50);
+        addObject(new DonaldTrump(), 500, 350);
+>>>>>>> origin/master
     }
 
     /**
