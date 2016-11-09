@@ -72,7 +72,7 @@ public class Tower extends Actor
     public void pointAtObject(Actor Hero) {
         setRotation((int)(180*Math.atan2(Hero.getY()-getY(),Hero.getX()-getX())/Math.PI));
     }
-    
+     
     /**
      * Act - do whatever the Tower wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -81,7 +81,8 @@ public class Tower extends Actor
     {
         if(isHeroInRange())
         {
-            
+            Hero hero = getWorld().getObjects(Hero.class).get(0);
+            turnTowards(hero.getX(),hero.getY()); 
             fire();
         }
     }  
