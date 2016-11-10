@@ -85,12 +85,15 @@ public class Tower extends Actor
             turnTowards(hero.getX(),hero.getY()); 
             fire();
         }
+        atkSpeed ++;
     }  
 
     public void fire() 
     {
-        Bullet bullet = new Bullet();
-        getWorld().addObject(bullet, getX(), getY());
-        bullet.setRotation(getRotation());
+        if(atkSpeed >= 3)
+        {   Bullet bullet = new Bullet();
+            getWorld().addObject(bullet, getX(), getY());
+            atkSpeed = 0;
+        }
     } 
 }
