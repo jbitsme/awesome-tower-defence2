@@ -11,15 +11,8 @@ public class MyWorld extends World
 
     private static final int WORLD_WIDTH = 600;
     private static final int WORLD_HEIGHT = 400;
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/master
-    
-
-
-     ExtraSpeed extraSpeed;
-
+    ExtraSpeed extraSpeed;
 
     /**
      * Constructor for objects of class MyWorld.
@@ -48,11 +41,7 @@ public class MyWorld extends World
         addObject(new DonaldTrump(), 100, 350);
         addObject(new DonaldTrump(), 100, 50);
         addObject(new DonaldTrump(), 500, 350);
-<<<<<<< HEAD
 
-
-=======
->>>>>>> origin/master
         addObject(new Hero(), 300, 200);
     }
     
