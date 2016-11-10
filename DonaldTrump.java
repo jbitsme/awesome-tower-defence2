@@ -9,11 +9,12 @@ import java.util.List;
  */
 public class DonaldTrump extends Actor
 {
-  
     private static final double WALKING_SPEED = 2.0;
+    private int HerosEaten;
     
     public DonaldTrump()
     {
+        HerosEaten = 0;
     }
     
     public void act()
@@ -22,7 +23,7 @@ public class DonaldTrump extends Actor
         randomTurn();
         move();
         atWorldEdge();
-        
+        lookForHero();
     }
     
     public void turnAtEdge()
@@ -47,11 +48,10 @@ public class DonaldTrump extends Actor
     
     public void eat(Class clss)
     {
-       Actor actor = getOneObjectAtOffset(0, 0, clss);
-       if(actor != null)
-       {
-           getWorld().removeObject(actor);
-       }
+        Actor actor = getOneObjectAtOffset(0, 0, clss);
+        if(actor != null) {
+            getWorld().removeObject(actor);
+        }
     }
     
     public boolean atWorldEdge()
@@ -94,5 +94,14 @@ public class DonaldTrump extends Actor
         return true;
     }
     
+    public void lookForHero()
+    {
+        if ( canSee(Hero.class) ) 
+        {
+            eat(Hero.class);
+            
+            HerosEaten = HerosEaten + 1;
+        }
+    }
 }
 
