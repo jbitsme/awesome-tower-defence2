@@ -70,10 +70,10 @@ public class Hero extends Actor
 
         if (speedUp == true)
         {
-            speed = 5;
+            speed = 15;
         }
         else{
-            speed = 1;
+            speed = 5;
         }
         return speed;
 
