@@ -14,10 +14,7 @@ public class MyWorld extends World
 
     ExtraSpeed extraSpeed;
     
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/master
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -36,7 +33,7 @@ public class MyWorld extends World
     {
        extraSpeed = new ExtraSpeed();
        addObject(extraSpeed, Greenfoot.getRandomNumber(600), Greenfoot.getRandomNumber(400));
-<<<<<<< HEAD
+
     }
     
     public void populateWorld()
@@ -49,11 +46,7 @@ public class MyWorld extends World
         addObject(new Tower(), 100, 300);
 
         addObject(new Hero(), 300, 200);
-=======
 
-
-       
->>>>>>> origin/master
     }
     
     
