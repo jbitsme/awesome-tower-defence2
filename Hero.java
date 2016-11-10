@@ -145,6 +145,7 @@ public class Hero extends Actor
         if (isTouching(Bullet.class))
         {
             hp--;
+            removeTouching(Bullet.class);
         }
     }
     

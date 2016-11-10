@@ -33,7 +33,24 @@ public class MyWorld extends World
     {
        extraSpeed = new ExtraSpeed();
        addObject(extraSpeed, Greenfoot.getRandomNumber(600), Greenfoot.getRandomNumber(400));
+<<<<<<< HEAD
 
+=======
+
+    }
+    
+    public void populateWorld()
+    {
+        addObject(new DonaldTrump(), 500, 50);
+        addObject(new DonaldTrump(), 100, 350);
+        addObject(new DonaldTrump(), 100, 50);
+        addObject(new DonaldTrump(), 500, 350);
+
+        addObject(new Tower(), 100, 300);
+
+        addObject(new Hero(), 300, 200);
+
+>>>>>>> origin/master
     }
     
     public MyWorld(boolean gameStarted)
