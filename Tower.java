@@ -17,7 +17,7 @@ public class Tower extends Actor
     {
         damage = 10;
         range = 1;
-        atkSpeed = 3;
+        atkSpeed = 0;
     }
     
     
@@ -66,7 +66,7 @@ public class Tower extends Actor
     
     public boolean isHeroInRange()
     {
-        return !getObjectsInRange(100, Hero.class).isEmpty();
+        return !getObjectsInRange(200, Hero.class).isEmpty();
     }
     
     public void pointAtObject(Actor Hero) {
@@ -90,10 +90,12 @@ public class Tower extends Actor
 
     public void fire() 
     {
-        if(atkSpeed >= 3)
-        {   Bullet bullet = new Bullet();
+        if(atkSpeed >= 50)
+        {
+            Bullet bullet = new Bullet();
             getWorld().addObject(bullet, getX(), getY());
+            bullet.setRotation(getRotation());
             atkSpeed = 0;
         }
-    } 
+   } 
 }
