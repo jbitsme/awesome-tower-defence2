@@ -11,9 +11,11 @@ public class MyWorld extends World
 
     private static final int WORLD_WIDTH = 600;
     private static final int WORLD_HEIGHT = 400;
-    
-    ExtraSpeed extraSpeed;
-    
+
+
+     ExtraSpeed extraSpeed;
+
+
     /**
      * Constructor for objects of class MyWorld.
      * 

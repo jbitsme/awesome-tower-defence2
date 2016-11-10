@@ -12,6 +12,7 @@ public class Hero extends Actor
     private int speed; 
     private boolean speedUp; //If eaten a Extra Speed PowerUp then speed up
     private int timer;
+    
 
     /**
      * Create a Hero
@@ -20,6 +21,7 @@ public class Hero extends Actor
     {
         powerUp = 0;  
         speedUp = false;
+        
     }
 
     /**
@@ -95,6 +97,7 @@ public class Hero extends Actor
                 w.putExtraSpeed();
                 
             } 
+            
             removeTouching(PowerUp.class);
             
             powerUp++;            
