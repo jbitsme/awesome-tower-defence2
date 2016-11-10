@@ -1,5 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+import java.util.List;
 
 /**
  * Write a description of class DonaldTrump here.
@@ -93,7 +93,6 @@ public class DonaldTrump extends Actor
         }
         return true;
     }
-    
     
 }
 
