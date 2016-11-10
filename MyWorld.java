@@ -8,13 +8,13 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class MyWorld extends World
 {
-<<<<<<< HEAD
+
     private static final int WORLD_WIDTH = 600;
     private static final int WORLD_HEIGHT = 400;
     
-=======
+
      ExtraSpeed extraSpeed;
->>>>>>> origin/master
+
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -24,20 +24,9 @@ public class MyWorld extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
         populateWorld();
-
-        putHero();
         checkForExtraSpeed();
     }
     
-    /**
-     * Puts the Hero into the world
-     */
-    private void putHero()
-    {
-        Hero hero = new Hero();
-        addObject(hero, 250, 100);
-    }
-
     /**
      * Puts a Power up at a random place
      */
@@ -56,7 +45,6 @@ public class MyWorld extends World
         addObject(new DonaldTrump(), 100, 350);
         addObject(new DonaldTrump(), 100, 50);
         addObject(new DonaldTrump(), 500, 350);
-<<<<<<< HEAD
         addObject(new Hero(), 300, 200);
     }
     
@@ -75,9 +63,7 @@ public class MyWorld extends World
         {
             Greenfoot.setWorld(new IntroWorld());
         }
-=======
 
->>>>>>> origin/master
     }
 
     /**
