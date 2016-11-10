@@ -10,23 +10,18 @@ import java.util.List;
 public class Tower extends Actor
 {
     protected int damage;
-    protected int range;
-    protected int atkSpeed;
+    private int atkSpeed;
     
     public Tower()
     {
         damage = 10;
-        range = 1;
-        atkSpeed = 0;
     }
     
     
-    public Tower(int d, int r, int a)
+    public Tower(int d)
     {
         damage = d;
-        range = r;
-        atkSpeed = a;
-    }
+           }
     
      /*
      * get methods
@@ -34,16 +29,6 @@ public class Tower extends Actor
     public int getDamage()
     {
         return damage;
-    }
-    
-    public int getRange()
-    {
-        return range;
-    }
-    
-    public int getAtkSpeed()
-    {
-        return atkSpeed;
     }
     
     /*
@@ -54,19 +39,9 @@ public class Tower extends Actor
         damage = n;
     }
     
-    public void setRange(int n)
-    {
-        range = n;
-    }
-    
-    public void setAtkSpeed(int n)
-    {
-        atkSpeed = n;
-    }
-    
     public boolean isHeroInRange()
     {
-        return !getObjectsInRange(200, Hero.class).isEmpty();
+        return !getObjectsInRange(300, Hero.class).isEmpty();
     }
     
     public void pointAtObject(Actor Hero) {
@@ -90,7 +65,7 @@ public class Tower extends Actor
 
     public void fire() 
     {
-        if(atkSpeed >= 50)
+        if(atkSpeed >= 70)
         {
             Bullet bullet = new Bullet();
             getWorld().addObject(bullet, getX(), getY());
