@@ -20,9 +20,9 @@ public class IntroWorld extends World
     {    
         super(WORLD_WIDTH, WORLD_HEIGHT, 1); 
         GreenfootImage background = getBackground();
-        setBackground(new GreenfootImage("bg.jpeg"));
+        setBackground(new GreenfootImage("bg.jpg"));
         GreenfootImage bg = getBackground();
-        bg.setColor(Color.BLACK);
+        bg.setColor(Color.RED);
         bg.drawString("WELCOME TO THE AWSOME TOWER DEFENCE GAME!", (WORLD_WIDTH / 2) - 100, (WORLD_HEIGHT / 2) - 150);
         bg.drawString("PRESS THE ENTER BUTTON TO PLAY", (WORLD_WIDTH / 2) - 90, (WORLD_HEIGHT / 2) - 120);
         bg.drawString("Use the arrows to control the Hero", (WORLD_WIDTH / 2) - 90, (WORLD_HEIGHT / 2) - 70);
