@@ -101,6 +101,10 @@ public class Hero extends Actor
                 w.putExtraSpeed();
                 
             } 
+            if(isTouching(ExtraHP.class))
+            {
+                hp = hp +10;
+            }
            
             removeTouching(PowerUp.class);
             

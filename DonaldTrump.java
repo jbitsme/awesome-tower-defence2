@@ -51,6 +51,7 @@ public class DonaldTrump extends Actor
         Actor actor = getOneObjectAtOffset(0, 0, clss);
         if(actor != null) {
             getWorld().removeObject(actor);
+            Greenfoot.setWorld(new GameOverWorld());
         }
     }
     
