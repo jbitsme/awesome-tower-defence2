@@ -36,6 +36,8 @@ public class Hero extends Actor
         lookForPowerUp();
         countDown();
         setSpeed();
+        hitByBullet();
+        checkHP();
     }    
 
     /**
@@ -99,6 +101,10 @@ public class Hero extends Actor
                 w.putExtraSpeed();
                 
             } 
+            if(isTouching(ExtraHP.class))
+            {
+                hp = hp +10;
+            }
            
             removeTouching(PowerUp.class);
             
@@ -130,5 +136,39 @@ public class Hero extends Actor
         timer = 200;
         return timer;
     }
+    
+    /**
+     * Checks if the Hero has been hit by a bullet.
+     */
+    public void hitByBullet()
+    {
+        if (isTouching(Bullet.class))
+        {
+            hp--;
+            removeTouching(Bullet.class);
+        }
+    }
+    
+    /**
+     * Checks if HP is zero.
+     * If HP is zero, game is over.
+     */
+    public void checkHP()
+    {
+        if(hp == 0)
+        {
+            endGame();
+        }
+    }
+    
+    /**
+     * Ends the Game
+     */
+    public void endGame()
+    {
+        Greenfoot.setWorld(new GameOverWorld());
+    }
+    
+    
 
 }
