@@ -14,27 +14,40 @@ public class Bullet extends Actor
      */
     public void act() 
     {
-      move(4);
+      move(10);
+      ifAtWorldEdge();
     }
     
     public void ifAtWorldEdge()
     {
-        if(getX()<0)
-        {
-            getWorld().removeObject(this);
-        }
-        if(getX()>600)
-        {
-            getWorld().removeObject(this);
-        }
-        if(getY()<0)
-        {
-            getWorld().removeObject(this);
-        }
-        if(getY()>425)
+        if( atWorldEdge() )
         {
             getWorld().removeObject(this);
         }
          
+    }
+    
+    public boolean atWorldEdge()
+    {
+        if(getX()< 1 ||getX()>getWorld().getWidth()-10)
+        return true;
+        if(getY()< 1 ||getY()>getWorld().getHeight()-10)
+        return true;
+        else
+        return false;
+    }
+    
+    public boolean canSee(Class clss)
+    {
+        return getOneObjectAtOffset(0, 0, clss) != null;
+    }
+    
+    public void eat(Class clss)
+    {
+       Actor actor = getOneObjectAtOffset(0, 0, clss);
+       if(actor != null)
+       {
+           getWorld().removeObject(actor);
+       }
     }
 }
